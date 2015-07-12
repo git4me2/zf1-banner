@@ -1,0 +1,18 @@
+<div id="view-content">
+
+    <h1>Lsita dostępnych banerów</h1>
+
+    <h4><a href="/banner/create">Dodaj nowy baner</a></h4>
+
+    <table>
+    <?php
+    foreach ($this->banners as $banner): ?>
+        <tr>
+            <td style="width: 830px;"><a href="/banner/edit/id/<?= $banner['id'] ?>"><?= $banner['name'] ?></a></td>
+            <td style="width: 150px"><?= $banner['created_at'] ?></td>
+            <td><a class="removeElement red" href="/banner/delete/id/<?= $banner['id'] ?>">U</a></td>
+        </tr>
+    <?php endforeach; ?>
+    </table>
+
+</div>

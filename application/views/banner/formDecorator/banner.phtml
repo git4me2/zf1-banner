@@ -1,0 +1,65 @@
+<?php
+//$catServiceArr  = $this->element->getView()->catServiceArr;
+?>
+
+<script>
+$(document).ready( function()
+{
+});
+</script>
+
+<div style="border-color: #ccc; padding: 10px;">
+    <div id="editCatSerwisForm">
+        <form action="<?= $this->element->getAction() ?>"
+              method="<?= $this->element->getMethod() ?>"
+              name="<?= $this->element->getName() ?>"
+              id="<?= $this->element->getId() ?>"
+              class="app_form">
+
+        	<fieldset class="multiboxy">
+        	    <legend>
+        	    	Formularz tworzenia banera
+        	    </legend>
+
+        	    <div style="width: 99%;">
+        			<div class="form_element"><?= $this->element->getElement('name'); ?></div>
+        		</div><div class="clear"></div>
+
+				<h3>Podaj kolejne frazy dla ekranów banera - po jednej w każdym z poniższych pól</h3>
+				<h6>maksymanie możesz utworzyć 5 ekranów banera</h6>
+
+        		<div style="width: 99%;">
+        			<div class="form_element"><?= $this->element->getElement('content'); ?></div>
+        		</div><div class="clear"></div>
+
+        		<div style="width: 99%;">
+        			<div class="form_element"><?= $this->element->getElement('content'); ?></div>
+        		</div><div class="clear"></div>
+
+        		<div style="width: 99%;">
+        			<div class="form_element"><?= $this->element->getElement('content'); ?></div>
+        		</div><div class="clear"></div>
+
+        		<div style="width: 99%;">
+        			<div class="form_element"><?= $this->element->getElement('content'); ?></div>
+        		</div><div class="clear"></div>
+
+        		<div style="width: 99%;">
+        			<div class="form_element"><?= $this->element->getElement('content'); ?></div>
+        		</div><div class="clear"></div>
+
+        		<div style="float:left; width:70%;">
+        			<div class="form_element"><?=  $this->element->getElement('url') ?></div>
+        		</div><div class="clear"></div>
+
+        		<div style="float:left; width:70%;">
+        			<div class="form_element"><?=  $this->element->getElement('status') ?> Aktywny</div>
+        		</div><div class="clear"></div>
+        		
+        		<div class="form_element">
+        			<?= $this->element->getElement('submitButton'); ?>
+        		</div>
+             </fieldset>
+        </form>
+    </div>
+</div><br/>
